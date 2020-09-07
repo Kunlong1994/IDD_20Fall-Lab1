@@ -76,7 +76,7 @@ about 10 to 20ms, current is still flowing and when change delay to 500, it star
 
 **Make a video of your LED blinking, and add it to your lab submission.**
 
-![blink]（https://github.com/Kunlong1994/IDD_20Fall-Lab1/blob/master/blink.png）
+![blink](https://github.com/Kunlong1994/IDD_20Fall-Lab1/blob/master/blink.png）
 
 ## Part D. Manually fade a LED
 **a. Are you able to get the LED to glow the whole turning range of the potentiometer? Why or why not?**
@@ -85,7 +85,7 @@ No, the potentiometer controls the resistence value, when it's too high, there i
 
 ## Part E. Fade a LED using Arduino
 
-![fade] (https://github.com/Kunlong1994/IDD_20Fall-Lab1/blob/master/fade.png)
+![fade](https://github.com/Kunlong1994/IDD_20Fall-Lab1/blob/master/fade.png)
 
 **a. What do you have to modify to make the code control the circuit you've built on your breadboard?**
 
