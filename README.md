@@ -31,10 +31,13 @@ Deliverables are due next Tuesday. Post a link to the wiki page on your main cla
 ## Part B. Manually Blink a LED
 
 **a. What color stripes are on a 220 Ohm resistor?**
+
 red red brown gold
  
 **b. What do you have to do to light your LED?**
+
 push the button. or you can try first install the driver, or try to find the COM port in device manager
+
 ## Part C. Blink a LED using Arduino
 
 
@@ -43,6 +46,7 @@ push the button. or you can try first install the driver, or try to find the COM
 
 
 **a. What line(s) of code do you need to change to make the LED blink (like, at all)?**
+
 void setup() {
   pinMode(10, OUTPUT); \\Change the pin port number to 10
 }
@@ -51,12 +55,18 @@ void loop() {
   digitalWrite(10, HIGH);   
   delay(1000);                      
   digitalWrite(10, LOW);   
-  delay(1000);       
+  delay(1000);   
+  
 **b. What line(s) of code do you need to change to change the rate of blinking?**
+
 change delay(1000) to delay(2000)
+
 **c. What circuit element would you want to add to protect the board and external LED?**
+
 the resistor, to reduce the voltage to 2 volts.
+
 **d.  At what delay can you no longer *perceive* the LED blinking? (And how can you prove to yourself that it is, in fact, still blinking?**
+
 about 10 to 20ms, current is still flowing and when change delay to 500, it starts to blink again
 
 **e. Save your new blink code to your lab 1 repository, with a link on the Lab report wiki page.**
@@ -65,13 +75,20 @@ about 10 to 20ms, current is still flowing and when change delay to 500, it star
 
 
 **Make a video of your LED blinking, and add it to your lab submission.**
-![Image text]（https://github.com/Kunlong1994/IDD_20Fall-Lab1/blob/master/blink.png）
+
+![blink]（https://github.com/Kunlong1994/IDD_20Fall-Lab1/blob/master/blink.png）
+
 ## Part D. Manually fade a LED
 **a. Are you able to get the LED to glow the whole turning range of the potentiometer? Why or why not?**
+
 No, the potentiometer controls the resistence value, when it's too high, there is  not enough current
+
 ## Part E. Fade a LED using Arduino
-![Image Text] (https://github.com/Kunlong1994/IDD_20Fall-Lab1/blob/master/fade.png)
+
+![fade] (https://github.com/Kunlong1994/IDD_20Fall-Lab1/blob/master/fade.png)
+
 **a. What do you have to modify to make the code control the circuit you've built on your breadboard?**
+
 int led = 11;
 
 int brightness = 0;
@@ -99,7 +116,9 @@ void loop() {
   
   delay(30);
 }
+
 **b. What is analogWrite()? How is that different than digitalWrite()?**
+
 analogWrite() sets the value of a PWM output pin on a scale of 0 - 255
 digitalWrite() only have HIGH and LOW
 
